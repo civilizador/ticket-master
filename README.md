@@ -1,5 +1,5 @@
 # ticket-master
-### Deployed app at get http://www.getticketmaster.info
+### Deployed app at  http://www.getticketmaster.info
 ## A complete solution for Ticket Tracking and Managing. 
 ## Ticket tracking application designed for NOC and Production support facilities. Allows to create /update tickets also put comments.
 
