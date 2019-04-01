@@ -21,7 +21,7 @@
                            <% } else { %> 
                                   <li  style="background-color:#eab9c2; font-size: 1.4em; " class="list-group-item active"><a  style = 'color: white' class="header  pull-right" href="/tickets/<%=ticket._id%>"> <%= ticket.ticket %> </a></li>
                            <% }  %>  
-                           <% const fqdnList = (JSON.stringify(ticket.fqdn)).split(',')%> 
+                          <% const fqdnList = (JSON.stringify(ticket.fqdn)).split(',') ; if(fqdnList[0]==undefined){fqdnList[0]='correct fqdn wasn not provided'} else if(fqdnList[1]==undefined){fqdnList[1]='correct fqdn wasn not provided'}%> 
                               <li class="list-group-item"> <span> Created at: </span>  <%= JSON.stringify(ticket.created).substring(1, 11) %> <span class='pull-right'>owner:      <a   href="/user/<%= ticket.ownerId%>"><%= ticket.owner%>  </a>  </span>   </li>
                               <li class="list-group-item"> <span> FQDN: </span><h5 class="fields"> <%= fqdnList[0].substring(2, 24)+"..."  %> <br> <%= fqdnList[1].substring(0, fqdnList[1].length-2)+"..."  %> </h5> </li>
                               <li class="list-group-item"> <span> Assign to Group: </span><h5 class="fields"> <%= ticket.group %>  </h5></li>
