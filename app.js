@@ -10,7 +10,7 @@
     //APP CONFIG
     
     //  Connecting to DB 
-    mongoose.connect("mongodb://admin:Asimssoft1@ds113019.mlab.com:13019/shift_to");
+    mongoose.connect(process.env.MONGO_URI);
 
     //  Express.js configuration
     app.use(require("express-session")({
