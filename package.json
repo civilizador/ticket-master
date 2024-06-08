@@ -18,7 +18,7 @@
     "body-parser": "^1.18.2",
     "bufferutil": "4.0.1",
     "chai": "^4.2.0",
-    "chai-http": "^4.2.1",
+    "chai-http": "^5.0.0",
     "connect": "^3.6.6",
     "connect-flash": "^0.1.1",
     "ejs": "^2.5.7",
